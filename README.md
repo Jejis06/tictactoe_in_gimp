@@ -2,4 +2,5 @@
 classic tic tac toe game but in gimp
 
 Note : compile minimax.cpp as mini in subdir called models
+<br>
 Note 2 : place all of this in gimp plugins directory on your computer
