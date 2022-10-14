@@ -5,7 +5,7 @@ from gimpfu import *
 import subprocess
 import os
 import random
-MINIMAX_SUB_DIR = "\\models\\mini"
+MINIMAX_SUB_DIR = os.path.join("models","mini")
 
 
 class Sprite: #sprite class
@@ -225,7 +225,7 @@ class Game: #game class
         tile.visible(True)
 
     def minimax(self,b):
-        minimax = os.path.dirname(os.path.abspath(__file__))+MINIMAX_SUB_DIR
+        minimax = os.path.join(os.path.dirname(os.path.abspath(__file__)),MINIMAX_SUB_DIR)
         cmd = minimax+" " + " ".join(map(str,b))
         s = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
         return int(s.stdout.read().decode("utf-8"))
