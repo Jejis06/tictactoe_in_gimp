@@ -18,7 +18,7 @@ bool Won(int player,int board[])
         {2, 4, 6}
     };
 
-    for(int i=0;i<9;i++){
+    for(int i=0;i<8;i++){
         int a=l[i][0],b=l[i][1],c=l[i][2];
 
         if (board[a]==player && board[b]==player && board[c]==player)
