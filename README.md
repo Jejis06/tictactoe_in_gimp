@@ -1,6 +1,7 @@
 # tictactoe_in_gimp
-classic tic tac toe game but in gimp
+classic tic tac toe game but in gimp (yes it is really tic tac toe in unmodified gimp)
 
+#Install
 Note : compile minimax.cpp as mini in subdir called models
 <br>
 Note 2 : place all of this in gimp plugins directory on your computer
